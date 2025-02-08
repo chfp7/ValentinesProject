@@ -82,6 +82,10 @@ p{
 	cursor: pointer;
 	color: #000;
 }
+.next-btn:hover{
+	color:red;
+	transition: 2s;
+}
 .back-btn{
 	position: absolute;
 	bottom: 13px;
@@ -90,13 +94,22 @@ p{
 	color: #fff;
 }
 #p1{
-	z-index: 3;
+	z-index: 6;
     text-align: center;
 }
 #p2{
-	z-index: 2;
+	z-index: 5;
 }
 #p3{
+	z-index: 4;
+}
+#p4{
+	z-index: 3;
+}
+#p5{
+	z-index: 2;
+}
+#p6{
 	z-index: 1;
 }
 #c1:checked ~ .flip-book #p1{
@@ -110,6 +123,18 @@ p{
 #c3:checked ~ .flip-book #p3{
 	transform: rotateY(-180deg);
 	z-index: 3;
+}
+#c4:checked ~ .flip-book #p4{
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+#c5:checked ~ .flip-book #p5{
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
+#c6:checked ~ .flip-book #p6{
+	transform: rotateY(-180deg);
+	z-index: 6;
 }
 .luvimg{
 	align-items: center;
